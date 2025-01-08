@@ -1,34 +1,459 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
+{% block content %}
 
-<title>Lakeside Cafe & Bar</title>
-<meta name="description" content="">
-<meta name="author" content="Rahul Nagarkoti" />
+     <!-- Hero Section -->
+     <section id="hero" class="hero section dark-background">
+  
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  
+          <div class="carousel-item active">
+            <img src="/img/hero-carousel/hero-carousel-1.jpg" alt="">
+            <div class="carousel-container">
+              <h2><span>Welcome to</span> Lakeside</h2>
+              <p>Nestled by the tranquil waters, Lakeside is your perfect blend of relaxation and refreshment.</p>
+              <div>
+                <a href="#menu" class="btn-get-started">OUR MENU</a>
+                <a href="#book-a-table" class="btn-get-started">BOOK A TABLE</a>
+              </div>
+            </div>
+          </div><!-- End Carousel Item -->
+  
+          <div class="carousel-item">
+            <img src="/img/hero-carousel/hero-carousel-2.jpg" alt="">
+            <div class="carousel-container">
+              <h2><span>Locally </span> sourced dishes</h2>
+              <p>Enjoy a freshly brewed cup of coffee by day and craft cocktails by night</p>
+              <div>
+                <a href="#menu" class="btn-get-started">OUR MENU</a>
+                <a href="#contact" class="btn-get-started">CONTACT US</a>
+              </div>
+            </div>
+          </div><!-- End Carousel Item -->
+  
+          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+  
+          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+  
+          <ol class="carousel-indicators"></ol>
+  
+        </div>
+  
+      </section><!-- /Hero Section -->
+  
+      <!-- About Section -->
+      <section id="about" class="about section light-background">
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+              <img src="/img/about.jpg" class="img-fluid" alt="">
+              <a href="/img/video.gif" class="glightbox pulsating-play-btn"></a>
+            </div>
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+              <h3>Our story</h3>
+              <p class="fst-italic">
+                At Lakeside, we’ve found the perfect balance between fresh, handcrafted coffee, mouthwatering meals, and signature cocktails. 
+                Whether it’s your morning cup of coffee, a leisurely breakfast, a satisfying lunch, or a relaxing evening drink, we’re here to cater to your needs with warmth and care.
+              </p>
 
-<link href="/favicon.jpg" rel="icon">
-<link href="/favicon.jpg" rel="apple-touch-icon">
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Use full viewport height */
-        background-color: #f0f0f0; /* Background color */
-    }
-    
-    img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain; /* Maintain aspect ratio */
-    }
-</style>
-</head>
-<body>
-    <img src="/ComingSoon.png" alt="Full Screen Image">
-</body>
-</html>
+              <p>
+                Whether you're here for coffee in the morning, a relaxing breakfast, a delicious lunch or dinner, or cocktails by the lake, Lakeside is always ready to serve. 
+                Come experience our balanced approach to food, drinks, and hospitality – we’re here whenever you need us.
+              </p>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section><!-- /About Section -->
+  
+      <!-- Why Us Section -->
+      <section id="why-us" class="why-us section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Why Us</h2>
+          <div><span>Why choose</span> <span class="description-title">Our Restaurant</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <span>01</span>
+                <h4><a href="javascript:void(0)"class="stretched-link">Fresh, Local Flavors</a></h4>
+                <p>From our freshly brewed coffee in the morning to locally sourced ingredients in every meal, we serve only the best.</p>
+              </div>
+            </div><!-- Card Item -->
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <span>02</span>
+                <h4><a href="javascript:void(0)" class="stretched-link">Relaxing Lakeside Atmosphere</a></h4>
+                <p>Enjoy fresh air waving off the serene waters while you sip on your favorite coffee or cocktail</p>
+              </div>
+            </div><!-- Card Item -->
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-item">
+                <span>03</span>
+                <h4><a href="javascript:void(0)" class="stretched-link">Unmatched Hospitality</a></h4>
+                <p>Our friendly and attentive team is dedicated to making every visit special.</p>
+              </div>
+            </div><!-- Card Item -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Why Us Section -->
+  
+      <!-- Menu Section -->
+      <section id="menu" class="menu section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <div><span>Check Our Tasty</span> <span class="description-title">Menu</span></div>
+          <div class="row text-center -flex justify-content-center"><a href="/Breakfast-Menu.pdf" class="viewFullMenuCls" target="_blank">Breakfast Menu</a>&nbsp;<a href="/Full-Menu.pdf" class="viewFullMenuCls" target="_blank">Full Menu</a> </div>
+
+        </div><!-- End Section Title -->
+  
+        <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul class="menu-filters isotope-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-starters">Breakfast</li>
+                <li data-filter=".filter-salads">Lunch/Dinner</li>
+                <li data-filter=".filter-specialty">Drinks</li>
+              </ul>
+            </div>
+          </div><!-- Menu Filters -->
+  
+          <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+  
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <div class="menu-content">
+                <a href="#">Lakeside Green Bowl</a><span>$18</span>
+              </div>
+              <div class="menu-ingredients">
+                Broccolini, kale, 2 fried eggs, sliced avocado, dried cranberry, walnuts & green goddess dressing
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <div class="menu-content">
+                <a href="#">Smoothies</a><span>$10.5</span>
+              </div>
+              <div class="menu-ingredients">
+                Banana or Mango or Coconut Acai
+              </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <div class="menu-content">
+                <a href="#">Pablo & Rusty's Porter Street Blend Coffee</a><span></span>
+              </div>
+              <div class="menu-ingredients">
+                Small <b>5</b> Large <b>5.5</b>
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <div class="menu-content">
+                <a href="#">Acai Bowl (V)</a><span>$20</span>
+              </div>
+              <div class="menu-ingredients">
+                Organic Acai, seasonal fruits , honey, coconut flakes & granola
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <!-- <img src="/img/menu/caesar.jpg" class="menu-img" alt=""> -->
+              <div class="menu-content">
+                <a href="#">Southern Fried Chicken Burger</a><span>$22</span>
+              </div>
+              <div class="menu-ingredients">
+                House Slaw, Pickles, Chipotle Mayo, Liquid Cheese
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+              <div class="menu-content">
+                <a href="#">Fresh Pressed Juice</a><span></span>
+              </div>
+              <div class="menu-ingredients">
+                Orange <b>9</b> Green Apple <b>10</b>
+              </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <div class="menu-content">
+                <a href="#">Smashed Avo (V)</a><span>$18</span>
+              </div>
+              <div class="menu-ingredients">
+                Marinated feta, toasted seeds, rocket, cherry tomato, green Zaatar served on top of Sourdough or Soy linseed
+              </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+              <div class="menu-content">
+                <a href="#">Eggs Your Way</a><span>$14</span>
+              </div>
+              <div class="menu-ingredients">
+                Two eggs fried/poached/scrambled & tomato relish on sourdough or soy linseed
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <div class="menu-content">
+                <a href="#">Thai Beef Salad</a><span>$26</span>
+              </div>
+              <div class="menu-ingredients">
+                Bean Sprouts, Carrot, Onion, Mixed Leaves, Cherry Tomato, Cucumber, Coriander, Toasted Seeds & Ginger Lime Dressing
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <div class="menu-content">
+                <a href="#">Lakeside Grill Chicken Burger</a><span>$22</span>
+              </div>
+              <div class="menu-ingredients">
+                Lettuce, Tomato, Smash Avo, Cheese, Chipotle Mayo
+              </div>
+            </div><!-- Menu Item -->
+  
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+              <div class="menu-content">
+                <a href="#">Grilled Salmon</a><span>$32</span>
+              </div>
+              <div class="menu-ingredients">
+                Roasted Broccolini, Chat Potatoes & Bearnaise Sauce
+              </div>
+            </div><!-- Menu Item -->
+  
+          </div><!-- Menu Container -->
+  
+        </div>
+  
+      </section><!-- /Menu Section -->  
+  
+      <!-- Book A Table Section -->
+      <section id="book-a-table" class="book-a-table section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Book A Table</h2>
+          <div><span>Book a</span> <span class="description-title">Table</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 reservation-img" style="background-image: url(/img/reservation.jpg);"></div>
+  
+            <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
+              <form action=" https://api.nubik.com.au/php-email-form/lakeside-booking.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+                <input type="hidden" name="to_email" value="info@lakesidecafeandbar.com.au">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="true" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                  </div>          
+                  <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input type="number" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="true" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="true" data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input name="date" id="date" readonly="true" class="form-control" required="true" placeholder="Select a date" >
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <select class="form-control" name="time"  placeholder="Time" required="true" data-msg="Please enter at least 4 chars">
+                      <option value="11:30 AM">11:30 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="12:30 PM">12:30 PM</option>
+                      <option value="1:00 PM">1:00 PM</option>
+                      <option value="1:30 PM">1:30 PM</option>
+                      <option value="2:00 PM">2:00 PM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="5:30 PM">5:30 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="6:30 PM">6:30 PM</option>
+                      <option value="7:00 PM">7:00 PM</option>
+                      <option value="7:30 PM">7:30 PM</option>
+                      <option value="8:00 PM">8:00 PM</option>
+                      <option value="8:30 PM">8:30 PM</option>
+                      <option value="9:00 PM">9:00 PM</option>
+                    </select>       
+                  </div>
+                  <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required="true" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Book a Table</button></div>
+              </form>
+            </div><!-- End Reservation Form -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Book A Table Section -->
+  
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery section">
+  
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <div><span>Some photos from</span> <span class="description-title">Our Restaurant</span></div>
+        </div><!-- End Section Title -->
+  
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row g-0">
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-1.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-1.png" alt="Savor fresh food and seafood dishes at Lakeside Cafe and Bar, The Entrance North"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-2.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-2.png" alt="Lakeside Cafe and Bar, The Entrance North – A cozy spot for dinner with stunning lake views"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-3.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-3.png" alt="Enjoy a refreshing drink at Lakeside Cafe and Bar, The Entrance North 2261 – Perfect for relaxing"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-4.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-4.png" alt="Gourmet lunch specials at Lakeside Cafe and Bar, The Entrance North, offering fresh local ingredients"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-5.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-5.png" alt="Healthy breakfast options at Lakeside Cafe and Bar, The Entrance North – Eggs, avocado, and more"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-6.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-6.png" alt="Delicious salmon dishes served at Lakeside Cafe and Bar, The Entrance North 2261"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+  
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="/img/gallery/image-7.png" class="glightbox" data-gallery="images-gallery">
+                  <img src="/img/gallery/image-7.png" alt="Lakeside Cafe and Bar – Freshly brewed coffee and homemade cakes at 20 Hargraves Street, The Entrance North"
+                  class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item --> 
+          </div>
+  
+        </div>
+  
+      </section><!-- /Gallery Section -->
+  
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe  style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.302431350561!2d151.50109797631822!3d-33.33704787343469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b72cf8f8a3c65b5%3A0x864770720922af49!2s20%20Hargraves%20St%2C%20The%20Entrance%20North%20NSW%202261!5e0!3m2!1sen!2sau!4v1735808441301!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>20 Hargraves Street,<br>The Entrance North, NSW, 2261</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Open 7 days</p>
+              <p>6 AM - 8:30 PM</p>
+             </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p style="word-wrap: break-word;">info@lakesidecafeandbar.com.au</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <a class="anchorMarginCls" href="tel:0243398367"><span>(02) 4339 8367</span></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    <link rel="stylesheet" href="/js/jquery-ui.theme.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#date" ).datepicker({minDate: 0, dateFormat:"dd-M-yy"});
+    } );
+    </script>
+{% endblock %}
