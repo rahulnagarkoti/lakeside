@@ -840,6 +840,7 @@ section,
   top: 0;
   left: 0;
   right: 0;
+  padding: 2px;
 }
 
 .hero h2 {
@@ -855,7 +856,7 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 48px;
+    font-size: 42px;
   }
 }
 
